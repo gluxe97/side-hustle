@@ -1,0 +1,12 @@
+{
+    "name": "side-hustle",
+
+    "description": "project outer package.json - will include heroku scripts at deployment",
+
+    "engines": {"node": "16.x"},
+
+    "scripts": {
+        "start": "npm start --prefix client"
+    }
+
+}
