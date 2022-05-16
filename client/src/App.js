@@ -1,5 +1,7 @@
 import {useState, useEffect} from 'react';
+import Navbar from './Navbar';
 import './App.css';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   const [users,setUsers]=useState("");
@@ -11,8 +13,10 @@ function App() {
   console.log(users);
   return (
     <div className="App">
-      <header className="App-header"/>
-      <h1>APP</h1>
+      <Navbar/>
+      <div id="main-container">
+        <Outlet/>
+      </div>
     </div>
   );
 }
